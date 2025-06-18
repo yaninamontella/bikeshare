@@ -1,0 +1,70 @@
+&lt;!DOCTYPE html>
+
+&lt;html lang="es">
+&lt;head>
+&lt;meta charset="UTF-8">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+&lt;title>Mi Portfolio&lt;/title>
+&lt;style>
+body {
+font-family: sans-serif;
+margin: 20px;
+background-color: #f4f4f4;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.profile-image {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.button-container {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 20px;
+width: 80%;
+max-width: 300px;
+}
+.button {
+display: inline-block;
+padding: 10px 20px;
+text-decoration: none;
+color: white;
+background-color: #007bff;
+border-radius: 5px;
+text-align: center;
+transition: background-color 0.3s ease;
+border: none;
+cursor: pointer;
+}
+.button:hover {
+background-color: #0056b3;
+}
+h1 {
+color: #333;
+margin-top: 0;
+}
+p {
+color: #666;
+text-align: center;
+margin-bottom: 30px;
+}
+&lt;/style>
+&lt;/head>
+&lt;body>
+&lt;h1>Bienvenido/a a mi Portfolio&lt;/h1>
+&lt;img src="tu_foto.jpg" alt="Mi Foto" class="profile-image">
+&lt;p>Aquí podrás encontrar mi trabajo práctico, currículum vitae y enlace a mi dashboard de Power BI.&lt;/p>
+
+<div class="button-container">
+    <a href="trabajo_practico.pdf" class="button" target="_blank">Ver Trabajo Práctico</a>
+    <a href="cv.pdf" class="button" target="_blank">Descargar CV</a>
+    <a href="[https://app.powerbi.com/groups/.../reports/](https://app.powerbi.com/groups/.../reports/)..." class="button" target="_blank">Ir a Dashboard Power BI</a>
+</div>
+&lt;/body>
+&lt;/html>
