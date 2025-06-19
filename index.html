@@ -1,70 +1,105 @@
-&lt;!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Yanina Montella - Data Analysis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e9f0f6; /* Un azul claro suave */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+            color: #333;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 25px;
+            border: 4px solid #007bff; /* Borde azul alrededor de la foto */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff; /* Azul brillante */
+            margin-bottom: 10px;
+            font-size: 2.2em;
+        }
+        p {
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Botones apilados verticalmente */
+            gap: 15px; /* Espacio entre botones */
+            width: 100%; /* Ocupa el ancho completo del contenedor */
+        }
+        .button {
+            display: block; /* Para que cada botón ocupe su propia línea */
+            padding: 14px 25px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+            transform: translateY(-2px); /* Efecto ligero de "elevación" */
+        }
+        .button:active {
+            transform: translateY(0); /* Vuelve a la posición original al hacer clic */
+        }
+        /* Estilo específico para el botón del PBIX si lo deseas */
+        .button.powerbi {
+            background-color: #f2c811; /* Color amarillo/naranja de Power BI */
+            color: #333; /* Texto oscuro para contraste */
+        }
+        .button.powerbi:hover {
+            background-color: #d1b10e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Hola! Soy Yanina Montella</h1>
+        <img src="foto.jpg" alt="Foto de Yanina Montella" class="profile-image">
+        <p>¡Bienvenido/a a mi portfolio de Data Analysis! Aquí encontrarás una muestra de mis proyectos y mi experiencia profesional.</p>
 
-&lt;html lang="es">
-&lt;head>
-&lt;meta charset="UTF-8">
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
-&lt;title>Mi Portfolio&lt;/title>
-&lt;style>
-body {
-font-family: sans-serif;
-margin: 20px;
-background-color: #f4f4f4;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.profile-image {
-width: 150px;
-height: 150px;
-border-radius: 50%;
-object-fit: cover;
-margin-bottom: 20px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.button-container {
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin-top: 20px;
-width: 80%;
-max-width: 300px;
-}
-.button {
-display: inline-block;
-padding: 10px 20px;
-text-decoration: none;
-color: white;
-background-color: #007bff;
-border-radius: 5px;
-text-align: center;
-transition: background-color 0.3s ease;
-border: none;
-cursor: pointer;
-}
-.button:hover {
-background-color: #0056b3;
-}
-h1 {
-color: #333;
-margin-top: 0;
-}
-p {
-color: #666;
-text-align: center;
-margin-bottom: 30px;
-}
-&lt;/style>
-&lt;/head>
-&lt;body>
-&lt;h1>Bienvenido/a a mi Portfolio&lt;/h1>
-&lt;img src="foto.jpg" alt="Mi Foto" class="profile-image">
-&lt;p>Aquí podrás encontrar mi trabajo práctico, currículum vitae y enlace a mi dashboard de Power BI.&lt;/p>
-
-<div class="button-container">
-    <a href="trabajo_practico.pdf" class="button" target="_blank">Ver Trabajo Práctico</a>
-    <a href="cv.pdf" class="button" target="_blank">Descargar CV</a>
-    <a href="[https://app.powerbi.com/groups/.../reports/](https://app.powerbi.com/groups/.../reports/)..." class="button" target="_blank">Ir a Dashboard Power BI</a>
-</div>
-&lt;/body>
-&lt;/html>
+        <div class="button-container">
+            <a href="Yanina Montella-Bootcamp Data Analysis.pdf" class="button" target="_blank">
+                Ver Trabajo Práctico (PDF)
+            </a>
+            <a href="cv.pdf" class="button" target="_blank">
+                Descargar Currículum Vitae (PDF)
+            </a>
+            <a href="BikeShare.pbix" class="button powerbi" download>
+                Descargar Dashboard Power BI (PBIX)
+            </a>
+        </div>
+    </div>
+</body>
+</html>
